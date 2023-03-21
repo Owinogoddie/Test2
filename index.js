@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
 
 
 
-app.use('/api/annotations',annotationRoutes)
+
 
 mongoose.connect("mongodb+srv://Owinogoddie:goddythedevninja@cluster0.ywulxup.mongodb.net/?retryWrites=true&w=majority")
 .then(()=>{  
