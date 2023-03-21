@@ -23,10 +23,7 @@ const bodyParser = require('body-parser');
 
 
 //middleware
-app.use((req,res,next)=>{
-    console.log(`path:${req.path}, method:${req.method}`)
-    next()
-})
+
 app.use(cors())
 app.use(bodyParser.json({ limit: '50mb' }));
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
