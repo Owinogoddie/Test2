@@ -7,8 +7,6 @@ const cors=require('cors')
 const app = express();
 app.use(express.json())
 app.use(cors())
-app.use(bodyParser.json({ limit: '50mb' }));
-app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 
 
 app.get('/api/register',(req,res)=>{
