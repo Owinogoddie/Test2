@@ -1,4 +1,5 @@
 const express = require('express');
+const mongoose=require('mongoose')
 const cors=require('cors')
 const app = express();
 app.use(express.json())
@@ -16,7 +17,14 @@ app.get('/', (req, res) => {
 });
   });
 
+mongoose.connect("mongodb+srv://Owinogoddie:goddythedevninja@cluster0.ywulxup.mongodb.net/?retryWrites=true&w=majority")
+.then(()=>{  
 
-app.listen(3000, () => {
-    console.log('Server listening on port 3000');
-  });
+app.listen(process.env.PORT,()=>{
+    console.log(`connected to db and app running on ${process.env.PORT}`)
+})
+
+})
+.catch((error)=>{
+    console.log(error)
+})
