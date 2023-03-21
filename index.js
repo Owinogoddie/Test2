@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose=require('mongoose')
 const bodyParser = require('body-parser');
 
-import annotationRoutes from './routes/annotationRoutes'
+
 const cors=require('cors')
 const app = express();
 app.use(express.json())
@@ -33,6 +33,8 @@ mongoose.connect("mongodb+srv://Owinogoddie:goddythedevninja@cluster0.ywulxup.mo
 app.listen(process.env.PORT,()=>{
     console.log(`connected to db and app running on ${process.env.PORT}`)
 })
+
+  module.exports = app;
 
 })
 .catch((error)=>{
