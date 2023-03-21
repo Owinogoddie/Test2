@@ -55,3 +55,5 @@ app.listen(process.env.PORT,()=>{
 .catch((error)=>{
     console.log(error)
 })
+
+export default app;
