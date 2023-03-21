@@ -44,7 +44,7 @@ app.use('/api/benefits',benefitsRoutes)
 
 
 // mongoose.connect('mongodb://localhost:27017/netninja-crud')
-mongoose.connect(process.env.MONGO_URI)
+mongoose.connect("mongodb+srv://Owinogoddie:goddythedevninja@cluster0.ywulxup.mongodb.net/?retryWrites=true&w=majority")
 .then(()=>{  
 
 app.listen(process.env.PORT,()=>{
