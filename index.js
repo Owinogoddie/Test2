@@ -5,9 +5,9 @@ app.use(express.json())
 app.use(cors())
 
 
-app.post('/api/register',(req,res)=>{
-  data=req.body
-  res.json({data:data})
+app.get('/api/register',(req,res)=>{
+  
+  res.json({data:'dadadadadada'})
 })
 
 app.get('/', (req, res) => {
